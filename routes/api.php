@@ -15,8 +15,6 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-// test api
-
 Route::get('/students',[StudentController::class, 'index']);
 Route::post('/students', [StudentController::class, 'store']);
 Route::get('/students/{id}', [StudentController::class, 'show']);
